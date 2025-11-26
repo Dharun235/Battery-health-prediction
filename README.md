@@ -30,7 +30,9 @@ The table containing performance comparison across different deep learning model
 | Transformer  | 0.0281 | 0.0349 | 0.0186 |
 
 and the plots of predicted vs actual capacity is shown below.
-![]()
+![Predicted vs Actual capacity of B0018 for LSTM-CNN, GRU, LSTM based models](https://github.com/Dharun235/Battery-health-prediction/blob/main/B0018_other_models.png)
+
+![Predicted vs Actual capacity of B0018 for transformer based based models](https://github.com/Dharun235/Battery-health-prediction/blob/main/B0018_transformer.png)
 
 ## Future work
 - Integrate uncertainty quantification to improve capacity prediction reliability.
