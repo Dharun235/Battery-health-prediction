@@ -2,6 +2,10 @@
 
 This repository contains experiments and utilities for predicting battery capacity / remaining useful life (RUL) using deep learning models under the course SSY340 - Deep Machine Learning, Chalmers University.
 
+## Project description
+Developed deep learning models based on LSTM, GRU, CNN–LSTM, and Transformer architectures to predict Li-ion battery capacity degradation and estimate remaining useful life using time-series charge–discharge data. The codebase is implemented using python utilizing pytorch, leveraging voltage, current, and temperature trends with feature engineering and sliding time windows for temporal modeling. The Transformer achieved the best prediction accuracy, while GRU and CNN–LSTM provided efficient alternatives for smaller datasets. The work highlights effective data-driven approaches for battery health monitoring, critical for electric vehicles and energy storage systems. The plot of the capacity of all batteries used is shown below.
+![Figure 1: Capacity degradation trends across cycles for all batteries.](https://github.com/Dharun235/Battery-health-prediction/blob/main/dataset.png)
+
 ## Repository structure
 - [models.ipynb](models.ipynb) — Contains code for data processing, model architecture, training and evaluation for LSTM, GRU and CNN-LSTM hybrid models.
 - [transformer.ipynb](transformer.ipynb) — Contains code for data processing, model architecture, training and evaluation for transformer based model.
@@ -30,9 +34,9 @@ The table containing performance comparison across different deep learning model
 | Transformer  | 0.0281 | 0.0349 | 0.0186 |
 
 and the plots of predicted vs actual capacity is shown below.
-![Predicted vs Actual capacity of B0018 for LSTM-CNN, GRU, LSTM based models](https://github.com/Dharun235/Battery-health-prediction/blob/main/B0018_other_models.png)
+![Figure 2: Predicted vs Actual capacity of B0018 for LSTM-CNN, GRU, LSTM based models](https://github.com/Dharun235/Battery-health-prediction/blob/main/B0018_other_models.png)
 
-![Predicted vs Actual capacity of B0018 for transformer based based models](https://github.com/Dharun235/Battery-health-prediction/blob/main/B0018_transformer.png)
+![Figure 3: Predicted vs Actual capacity of B0018 for transformer based based models](https://github.com/Dharun235/Battery-health-prediction/blob/main/B0018_transformer.png)
 
 ## Future work
 - Integrate uncertainty quantification to improve capacity prediction reliability.
