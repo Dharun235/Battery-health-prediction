@@ -20,6 +20,22 @@ pip install numpy pandas scipy scikit-learn matplotlib torch transformers
 - Build sliding windows using build_instances.
 - Train models in the notebooks; Models are saved in saved_models folder.
 
-Authors
+## Results
+The table containing performance comparison across different deep learning models is shown below.
+| Model        | MAE    | RMSE   | MAPE   |
+|-------------|-------|-------|-------|
+| Basic LSTM   | 0.0442 | 0.0522 | 0.0299 |
+| Basic GRU    | 0.0234 | 0.0430 | 0.0154 |
+| CNN + LSTM   | 0.0313 | 0.0478 | 0.0206 |
+| Transformer  | 0.0281 | 0.0349 | 0.0186 |
+
+and the plots of predicted vs actual capacity is shown below.
+![]()
+
+## Future work
+- Integrate uncertainty quantification to improve capacity prediction reliability.
+- Expand dataset diversity and explore domain adaptation to improve generalization.
+
+### Authors
 - Dharunkumar Senthilkumar
 - Dhruvkumar Patel
