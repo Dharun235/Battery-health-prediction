@@ -42,6 +42,9 @@ and the plots of predicted vs actual capacity is shown below.
 - Integrate uncertainty quantification to improve capacity prediction reliability.
 - Expand dataset diversity and explore domain adaptation to improve generalization.
 
+## Models
+Transformer model is saved here for future use - https://huggingface.co/Dharunkumar9/battery-capacity-predictor
+
 ### Authors
 - Dharunkumar Senthilkumar
 - Dhruvkumar Patel
