@@ -45,6 +45,9 @@ and the plots of predicted vs actual capacity is shown below.
 ## Models
 Transformer model is saved here for future use - https://huggingface.co/Dharunkumar9/battery-capacity-predictor
 
+## References
+https://ieee-dataport.org/documents/lithium-ion-battery-data-set
+
 ### Authors
 - Dharunkumar Senthilkumar
 - Dhruvkumar Patel
