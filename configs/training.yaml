@@ -1,0 +1,41 @@
+# Training Configuration
+
+# Training parameters
+num_epochs: 100
+batch_size: 32
+learning_rate: 0.001
+weight_decay: 1e-5
+gradient_clip: 1.0
+
+# Optimizer
+optimizer: "adam"  # "adam", "sgd", "rmsprop"
+optimizer_params:
+  beta1: 0.9
+  beta2: 0.999
+
+# Learning rate scheduling
+use_scheduler: true
+scheduler_type: "step"  # "step", "exponential", "cosine"
+scheduler_params:
+  step_size: 10
+  gamma: 0.5
+
+# Loss function
+loss_function: "mse"  # "mse", "mae", "huber"
+
+# Validation
+validation_frequency: 5  # Validate every N epochs
+early_stopping: true
+early_stopping_patience: 20
+early_stopping_metric: "val_mse"  # "val_mse", "val_mae", "val_rmse"
+
+# Checkpointing
+save_checkpoints: true
+checkpoint_dir: "outputs/checkpoints"
+save_best_model: true
+best_model_path: "outputs/checkpoints/best_model.pt"
+
+# Logging
+log_frequency: 10  # Log metrics every N batches
+log_dir: "outputs/logs"
+tensorboard: true

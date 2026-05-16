@@ -1,0 +1,27 @@
+# Data Configuration
+
+# Data paths
+raw_data_dir: "data/raw"
+processed_data_dir: "data/processed"
+
+# Dataset settings
+dataset_name: "nasa_battery"
+train_size: 0.7
+validation_size: 0.15
+test_size: 0.15
+
+# Preprocessing
+normalize: true
+normalization_method: "minmax"  # "minmax" or "zscore"
+remove_outliers: true
+outlier_method: "iqr"  # "iqr" or "zscore"
+outlier_threshold: 1.5
+
+# Missing values
+fill_missing: true
+fill_method: "forward"  # "forward", "backward", or "interpolate"
+
+# Sequence settings
+sequence_length: 100
+forecast_horizon: 10
+stride: 1

@@ -1,0 +1,42 @@
+# Model Configuration
+
+# Model type
+model_type: "transformer"  # "transformer", "lstm", "gru", "cnn_lstm", "xgboost"
+
+# Architecture parameters
+transformer:
+  input_dim: 1
+  hidden_dim: 768
+  num_layers: 12
+  num_heads: 12
+  feedforward_dim: 3072
+  dropout: 0.1
+  activation: "relu"
+
+lstm:
+  input_dim: 1
+  hidden_dim: 128
+  num_layers: 2
+  dropout: 0.2
+  bidirectional: false
+
+gru:
+  input_dim: 1
+  hidden_dim: 128
+  num_layers: 2
+  dropout: 0.2
+  bidirectional: false
+
+cnn_lstm:
+  input_dim: 1
+  cnn_filters: [32, 64]
+  kernel_sizes: [3, 3]
+  lstm_hidden_dim: 128
+  lstm_num_layers: 2
+  dropout: 0.2
+
+# Output
+output_dim: 1
+
+# Pretrained model
+pretrained_model_path: null  # Path to pretrained weights
